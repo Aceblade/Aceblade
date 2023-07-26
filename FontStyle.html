@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script lang="javascript">
+		var a,b,c;
+		a=prompt("Enter your name");
+		confirm("Are you sure that "+a+"is correct?");
+		confirm("Do you want to increase the size of "+a+"?");
+		b=parseInt(prompt("Enter font size"));
+		confirm("Do you want to change the color of "+a+"?");
+		c=prompt("Enter color of text");
+		function set_font_size()
+		{
+			document.write (a.fontsize(b).fontcolor(c));
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Set font style" onclick="set_font_size()">
+</body>
+</html>
